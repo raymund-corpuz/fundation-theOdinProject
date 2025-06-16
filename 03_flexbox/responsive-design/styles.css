@@ -80,3 +80,8 @@
     order: 2;
   }
 }
+
+.illustration img {
+  width: 100%;
+  display: block;
+}
