@@ -6,8 +6,41 @@
     <title>Document</title>
   </head>
   <body>
-    <button>Start machine</button>
-    <p>The machine is stopped</p>
+    <button id="button">Start machine</button>
+    <p id="machine">The machine is stopped</p>
+
+    <hr />
+    <button id="press-me">Press Me</button>
+    <br />
+    <p id="greeting"></p>
+
+    <hr />
+    <h1>Number guessing game</h1>
+    <p>
+      We have selected a random number between 1 and 100. See if you can guess
+      it in 10 turns or fewer. We'll tell you if your guess was too high or to
+      low
+    </p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess:</label>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        required
+        id="guessField"
+        class="guessField"
+      />
+
+      <input type="submit" value="Submit guess" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
