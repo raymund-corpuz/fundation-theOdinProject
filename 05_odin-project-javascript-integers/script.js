@@ -119,3 +119,48 @@ function setWeather() {
     para.textContent = "";
   }
 }
+
+const fruits = document.querySelector("#fruits");
+const fruitPragraph = document.querySelector("#fruitPragraph");
+
+function getFruit() {
+  const myFruit = fruits.value;
+
+  console.log(myFruit);
+
+  switch (myFruit) {
+    case "banana":
+      fruitPragraph.textContent =
+        "BANANA : Botanically speaking, a banana qualifies as a berry because it develops from a single flower with one ovary and has multiple seeds embedded in the flesh.";
+      break;
+    case "pine apple":
+      fruitPragraph.textContent = `PINE APPLE : A pineapple is a multiple fruit, meaning it develops from the fusion of many individual flowers (called a "multiple inflorescence")`;
+      break;
+    case "coconut":
+      fruitPragraph.textContent =
+        "COCONUT : Inside that hard shell is the seed—the part that can grow into a new coconut tree.And no, despite the name, coconuts are not true nuts. They don't meet the botanical criteria for nuts (like acorns or hazelnuts).";
+      break;
+    case "strawberry":
+      fruitPragraph.textContent =
+        "STRAWBERRY : Botanically, a strawberry is not a true berry, because true berries (like bananas or grapes) develop from a single ovary and contain seeds inside the flesh.";
+      break;
+
+    default:
+      fruitPragraph.textContent = "";
+  }
+}
+
+fruits.addEventListener("click", getFruit);
+
+const bgtheme = document.querySelector(".bgtheme");
+const theme = document.querySelector("#theme");
+const myweb = document.querySelector("#myweb");
+
+function update(bgColor, textColor) {
+  bgtheme.style.backgroundColor = bgColor;
+  myweb.style.color = textColor;
+}
+
+theme.addEventListener("change", () =>
+  theme.value === "black" ? update("black", "white") : update("white", "black")
+);
