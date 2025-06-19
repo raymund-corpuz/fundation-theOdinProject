@@ -164,3 +164,12 @@ function update(bgColor, textColor) {
 theme.addEventListener("change", () =>
   theme.value === "black" ? update("black", "white") : update("white", "black")
 );
+
+//NUMBER CHECKER
+function numberChecker(number) {
+  if (number >= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
