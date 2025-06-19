@@ -208,3 +208,8 @@ const repeatString = function (word, times) {
   }
   return string;
 };
+
+//STRING REVERSE
+const reverseString = function (word) {
+  return word.split("").reverse().join("");
+};
