@@ -19,3 +19,19 @@ function getComputerChoice() {
   //   const finalSelect = tools[select];
   //     return finalSelect;
 }
+
+const computerChoice = getComputerChoice();
+console.log(computerChoice);
+const userChoice = getUserChoice();
+console.log(userChoice);
+// console.log(getComputerChoice());
+// <--------------------------USER CHOICE---------------------------->
+
+// Create a function to get the user choice
+function getUserChoice() {
+  // use a prompt to get the user choice
+  const userChoice = "Scissors";
+  const userChoiceLowerCase = userChoice.toLowerCase();
+  // return the user choice
+  return userChoiceLowerCase;
+}
