@@ -21,9 +21,9 @@ function getComputerChoice() {
 }
 
 const computerChoice = getComputerChoice();
-console.log(computerChoice);
+console.log("Computer Choice: " + computerChoice);
 const userChoice = getUserChoice();
-console.log(userChoice);
+console.log("User Choice: " + userChoice);
 // console.log(getComputerChoice());
 // <--------------------------USER CHOICE---------------------------->
 
@@ -35,3 +35,36 @@ function getUserChoice() {
   // return the user choice
   return userChoiceLowerCase;
 }
+
+// create a function evaluate
+// this will  have two parameters (computerChoice, userChoice)
+function evaluateComputerVsUser(computerChoice, userChoiceLowerCase) {
+  // create an if statement to check who is the winner
+  // if computer- rock && user -rock || computer paper && user- paper || computer scissors && user-scissors :  return tie
+  if (
+    (computerChoice == "rock" && userChoiceLowerCase == "rock") ||
+    (computerChoice == "paper" && userChoiceLowerCase == "paper") ||
+    (computerChoice == "scissors" && userChoiceLowerCase == "scissors")
+  ) {
+    console.log("------------ DRAW ----------------");
+  }
+  // if computer-rock && user -paper || computer paper && user -scissors || computer scissors && user rock  : return user as winner
+  else if (
+    (computerChoice == "rock" && userChoiceLowerCase == "paper") ||
+    (computerChoice == "paper" && userChoiceLowerCase == "scissors") ||
+    (computerChoice == "scissors" && userChoiceLowerCase == "rock")
+  ) {
+    console.log("-------------- The User Wins -----------------");
+  }
+
+  // if computer -rock && user-scissors  || computer scissors && user paper || computer paper &&  user rock: return computer winner
+  else if (
+    (computerChoice == "rock" && userChoiceLowerCase == "scissors") ||
+    (computerChoice == "scissors" && userChoiceLowerCase == "paper") ||
+    (computerChoice == "paper" && userChoiceLowerCase == "rock")
+  ) {
+    console.log("---------------- The Computer Wins --------------------");
+  }
+}
+
+evaluateComputerVsUser(computerChoice, userChoice);
