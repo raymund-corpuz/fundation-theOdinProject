@@ -188,14 +188,14 @@ const thisYear = 1965;
 const firstName = "Carlos";
 const lastName = "Stevenson";
 
-const greeting =
-  "Hello! My name is " +
-  firstName +
-  " " +
-  lastName +
-  " and I am " +
-  (thisYear - birthYear) +
-  " years old.";
+// const greeting =
+//   "Hello! My name is " +
+//   firstName +
+//   " " +
+//   lastName +
+//   " and I am " +
+//   (thisYear - birthYear) +
+//   " years old.";
 
 //REPEAT STRING
 const repeatString = function (word, times) {
@@ -213,3 +213,30 @@ const repeatString = function (word, times) {
 const reverseString = function (word) {
   return word.split("").reverse().join("");
 };
+
+//LOOPS =====================================>
+
+const introLoops = document.querySelector(".intro-loops");
+const calculateLoop = document.querySelector("#calculate-loop");
+const clearLoop = document.querySelector("#clear-loop");
+
+function calculateLoopFunction(min = 0, max = 10) {
+  for (let i = min; i < max; i++) {
+    const result = i * i;
+    const finalResult = `${i} * ${i} = ${result}`;
+
+    const resultLoop = document.createElement("p");
+    resultLoop.innerHTML = finalResult;
+    resultLoop.classList.add("result-loop");
+    introLoops.appendChild(resultLoop);
+    console.log(finalResult);
+  }
+}
+
+function clearLoopFunction() {
+  introLoops.innerHTML = "";
+}
+
+calculateLoop.addEventListener("click", () => calculateLoopFunction());
+
+clearLoop.addEventListener("click", () => clearLoopFunction());

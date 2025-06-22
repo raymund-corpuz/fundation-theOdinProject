@@ -1,9 +1,10 @@
 //create a function getCOmputerChoice
 
+let winProgress = 0;
 function getComputerChoice() {
   const computerChoice = Math.trunc(Math.random() * 3);
   const tools = ["rock", "paper", "scissors"];
-  getUserChoice();
+  console.log("Computer Choice: " + tools[computerChoice]);
   return tools[computerChoice];
 
   // Step 1: use Math.rand() function this should return 1 - 3
@@ -20,27 +21,30 @@ function getComputerChoice() {
   //     return finalSelect;
 }
 
-const computerChoice = getComputerChoice();
-console.log("Computer Choice: " + computerChoice);
-const userChoice = getUserChoice();
-console.log("User Choice: " + userChoice);
 // console.log(getComputerChoice());
 // <--------------------------USER CHOICE---------------------------->
 
 // Create a function to get the user choice
-function getUserChoice() {
+function getHumanChoice() {
   // use a prompt to get the user choice
-  const userChoice = "Scissors";
+  const userChoice = "PAPER";
   const userChoiceLowerCase = userChoice.toLowerCase();
+  console.log("User Choice: " + userChoiceLowerCase);
   // return the user choice
   return userChoiceLowerCase;
 }
 
+const computerSelection = getComputerChoice();
+const humanSelection = getHumanChoice();
+
 // create a function evaluate
 // this will  have two parameters (computerChoice, userChoice)
-function evaluateComputerVsUser(computerChoice, userChoiceLowerCase) {
+function playRound(computerChoice, userChoiceLowerCase) {
   // create an if statement to check who is the winner
   // if computer- rock && user -rock || computer paper && user- paper || computer scissors && user-scissors :  return tie
+
+  // console.log("Computer Choice: " + computerSelection);
+  // console.log("User Choice: " + humanSelection);
   if (
     (computerChoice == "rock" && userChoiceLowerCase == "rock") ||
     (computerChoice == "paper" && userChoiceLowerCase == "paper") ||
@@ -67,4 +71,6 @@ function evaluateComputerVsUser(computerChoice, userChoiceLowerCase) {
   }
 }
 
-evaluateComputerVsUser(computerChoice, userChoice);
+for (let i = 0; i < 5; i++) {
+  playRound(computerSelection, humanSelection);
+}
