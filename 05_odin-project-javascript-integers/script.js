@@ -240,3 +240,50 @@ function clearLoopFunction() {
 calculateLoop.addEventListener("click", () => calculateLoopFunction());
 
 clearLoop.addEventListener("click", () => clearLoopFunction());
+
+// FOR EACH LOOP =======================================>
+const cats = ["Pete", "Biggles", "Jasmine"];
+let myFavoriteCat = "My favorite Cat: ";
+
+for (const cat of cats) {
+  myFavoriteCat += `${cat},`;
+}
+
+//EXITING LOOPS WITH BREAK ========================>
+const contacts = [
+  "Chris: 2232322",
+  "Sarah: 3453456",
+  "Bill: 7654322",
+  "Mary: 9998769",
+  "Dianne: 9384975",
+];
+
+const paragprahExitingLoop = document.querySelector(".paragraph-exiting-loop");
+const inputExitingLoop = document.querySelector("#search-exiting-loop");
+
+const btnExitingLoop = document.querySelector("#exiting-loop-btn");
+
+btnExitingLoop.addEventListener("click", () => {
+  const searchName = inputExitingLoop.value.toLowerCase();
+  inputExitingLoop.value = "";
+  inputExitingLoop.focus();
+  paragprahExitingLoop.textContent = "";
+
+  for (const contact of contacts) {
+    const splitContact = contact.split(":");
+
+    if (splitContact[0].toLowerCase() === searchName) {
+      paragprahExitingLoop.textContent = `${splitContact[0]}'s number is ${splitContact[1]}`;
+      break;
+    }
+  }
+  if (paragprahExitingLoop.textContent === "") {
+    paragprahExitingLoop.textContent = "Contact not found";
+  }
+});
+
+for (const contact of contacts) {
+  const splitContact = contact.split(":");
+
+  console.log(splitContact[0]);
+}
