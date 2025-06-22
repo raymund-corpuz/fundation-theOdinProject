@@ -281,9 +281,3 @@ btnExitingLoop.addEventListener("click", () => {
     paragprahExitingLoop.textContent = "Contact not found";
   }
 });
-
-for (const contact of contacts) {
-  const splitContact = contact.split(":");
-
-  console.log(splitContact[0]);
-}
