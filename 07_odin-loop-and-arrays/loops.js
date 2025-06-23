@@ -25,4 +25,23 @@ function searchFilter(array, query) {
   console.log(result);
 }
 
-searchFilter(fruits, "ana");
+// searchFilter(fruits, "ana");
+
+const inventory = [
+  { name: "apples", quantity: 2 },
+  { name: "banana", quantity: 0 },
+  { name: "cherries", quantity: 5 },
+  { name: "coconut", quantity: 4 },
+  { name: "grapes", quantity: 7 },
+];
+
+function searchInventory(search, query) {
+  const findInventory = search.find((element) => element.name === query);
+  let result = `${findInventory.name} has ${findInventory.quantity} fruits in the basket`;
+  if (findInventory) {
+    return result;
+  }
+  return "NO INVENTORY";
+}
+
+console.log(searchInventory(inventory, "coconut"));
