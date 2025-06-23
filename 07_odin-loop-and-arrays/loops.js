@@ -70,3 +70,15 @@ function multipyNumeric(obj) {
 multipyNumeric(menu);
 
 console.log(menu);
+
+//CONTINUE =========================>
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 0) continue;
+  // console.log(i);
+}
+
+//ARRAY METHODS - SPLICE ==============================>
+let arr = ["I ", "study", "Javascript", "right", "now"];
+const remove = arr.splice(0, 3, "Lets", "dance");
+console.log(arr + " original");
+console.log(remove + " modified");
