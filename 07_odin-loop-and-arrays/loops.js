@@ -51,4 +51,22 @@ const arrayFindIndex = [55, 12, 8, 103];
 
 const arrayFindIndexNumber = (element) => element > 13;
 
-console.log(arrayFindIndex.findIndex(arrayFindIndexNumber));
+// console.log(arrayFindIndex.findIndex(arrayFindIndexNumber));
+
+//FOR IN LOOP ==========================================>
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu",
+};
+
+function multipyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == "number") {
+      return (obj[key] *= 2);
+    }
+  }
+}
+multipyNumeric(menu);
+
+console.log(menu);
