@@ -80,5 +80,10 @@ for (let i = 0; i < 10; i++) {
 //ARRAY METHODS - SPLICE ==============================>
 let arr = ["I ", "study", "Javascript", "right", "now"];
 const remove = arr.splice(0, 3, "Lets", "dance");
-console.log(arr + " original");
-console.log(remove + " modified");
+// console.log(arr + " original");
+// console.log(remove + " modified");
+
+//SLICE METHOD ====================================>
+let sliceArr = ["R", "A", "Y", "M", "U", "N", "D"];
+let sliceRes = sliceArr.slice(1, 3);
+console.log(sliceRes);
