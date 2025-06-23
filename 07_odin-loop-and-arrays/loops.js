@@ -86,4 +86,11 @@ const remove = arr.splice(0, 3, "Lets", "dance");
 //SLICE METHOD ====================================>
 let sliceArr = ["R", "A", "Y", "M", "U", "N", "D"];
 let sliceRes = sliceArr.slice(1, 3);
-console.log(sliceRes);
+// console.log(sliceRes);
+
+//CONCAT METHOD ======================================>
+let concatArr = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(
+  concatArr.concat([4, 5, 6, 7, 8, 9, 10, 11], [2, 4, 13, 15, 16, 25, 16])
+);
