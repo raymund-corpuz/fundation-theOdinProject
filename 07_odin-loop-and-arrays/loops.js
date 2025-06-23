@@ -91,6 +91,15 @@ let sliceRes = sliceArr.slice(1, 3);
 //CONCAT METHOD ======================================>
 let concatArr = [1, 2, 3, 4, 5, 6, 7];
 
-console.log(
-  concatArr.concat([4, 5, 6, 7, 8, 9, 10, 11], [2, 4, 13, 15, 16, 25, 16])
-);
+// console.log(
+//   concatArr.concat([4, 5, 6, 7, 8, 9, 10, 11], [2, 4, 13, 15, 16, 25, 16])
+
+//FOREACH METHOD ================================================>
+const forEachItem = ["item1", "item2", "item3", "item4"];
+const forEachArr = [];
+
+forEachItem.forEach((item) => {
+  forEachArr.push(item + " AWESOME");
+});
+
+console.log(...forEachArr);
