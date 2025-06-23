@@ -33,6 +33,7 @@ const inventory = [
   { name: "cherries", quantity: 5 },
   { name: "coconut", quantity: 4 },
   { name: "grapes", quantity: 7 },
+  { name: "banana", quantity: 10 },
 ];
 
 function searchInventory(search, query) {
@@ -44,4 +45,10 @@ function searchInventory(search, query) {
   return "NO INVENTORY";
 }
 
-console.log(searchInventory(inventory, "coconut"));
+// console.log(searchInventory(inventory, "banana"));
+
+const arrayFindIndex = [55, 12, 8, 103];
+
+const arrayFindIndexNumber = (element) => element > 13;
+
+console.log(arrayFindIndex.findIndex(arrayFindIndexNumber));
