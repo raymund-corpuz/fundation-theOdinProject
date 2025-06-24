@@ -138,4 +138,15 @@ const forEachFlattenArray = (arr) => {
 };
 
 const forEachNested = [1, 2, 3, [4, 5, [6, 7], 8, 9]];
-console.log(forEachFlattenArray(forEachNested));
+// console.log(forEachFlattenArray(forEachNested));
+
+//FIND ARRAY METHOD ==============================>
+let findUser = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pette" },
+  { id: 3, name: "Mary" },
+  { id: 4, name: "Johny" },
+];
+
+let userFindId = findUser.find((item) => item.id === 2);
+console.log(userFindId);
