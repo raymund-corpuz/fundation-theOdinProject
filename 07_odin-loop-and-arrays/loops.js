@@ -194,3 +194,25 @@ let reverseArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 let reversedArray = reverseArray.reverse();
 console.log(reversedArray);
+
+//THISARGS FILTER METHOD ==================================>
+let thisArgsArmy = {
+  minAge: 18,
+  maxAge: 27,
+  canJoin(user) {
+    return user.age >= this.minAge && user.age < this.maxAge;
+  },
+};
+
+let thisArgsUser = [
+  { age: 16 },
+  { age: 20 },
+  { age: 23 },
+  { age: 30 },
+  { age: 32 },
+  { age: 24 },
+];
+
+let thisArgsSoldiers = thisArgsUser.filter(thisArgsArmy.canJoin, thisArgsArmy);
+
+console.log(thisArgsSoldiers);
