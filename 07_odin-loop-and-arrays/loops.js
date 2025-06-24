@@ -179,3 +179,12 @@ console.log(filterUserResult);
 let mapLength = ["Bilbo", "Gandalf", "Nazgul"].map((item) => item.length);
 
 console.log(mapLength);
+
+//SORT ARRAY METHOD =====================================>
+let sortArray = [1, 2, 15, 16, 331, 123, 12, 111];
+
+let sortedArray = sortArray.sort((a, b) => {
+  return a === b ? 0 : a > b ? 1 : -1;
+});
+
+console.log(sortedArray);
