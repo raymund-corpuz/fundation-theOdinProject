@@ -121,5 +121,21 @@ class Counter {
 
 const forEachConstructorObj = new Counter();
 forEachConstructorObj.add([2, 5, 9]);
-console.log(forEachConstructorObj.count);
-console.log(forEachConstructorObj.sum);
+// console.log(forEachConstructorObj.count);
+// console.log(forEachConstructorObj.sum);
+
+//FOREACH FLATTEN AN ARRAY ========================>
+const forEachFlattenArray = (arr) => {
+  const result = [];
+  arr.forEach((item) => {
+    if (Array.isArray(item)) {
+      result.push(...forEachFlattenArray(item));
+    } else {
+      result.push(item);
+    }
+  });
+  return result;
+};
+
+const forEachNested = [1, 2, 3, [4, 5, [6, 7], 8, 9]];
+console.log(forEachFlattenArray(forEachNested));
