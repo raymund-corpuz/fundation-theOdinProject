@@ -163,3 +163,14 @@ let findIndexUserResult = findIndexUser.findIndex(
 );
 
 console.log(findIndexUserResult);
+
+//FILTER ARRAY METHOD ====================================>
+let filterUser = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pette" },
+  { id: 3, name: "Mary" },
+  { id: 4, name: "John" },
+];
+
+let filterUserResult = filterUser.filter((item) => item.id < 3);
+console.log(filterUserResult);
