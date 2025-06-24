@@ -174,3 +174,8 @@ let filterUser = [
 
 let filterUserResult = filterUser.filter((item) => item.id < 3);
 console.log(filterUserResult);
+
+// MAP ARRAY METHOD ===================================>
+let mapLength = ["Bilbo", "Gandalf", "Nazgul"].map((item) => item.length);
+
+console.log(mapLength);
