@@ -215,4 +215,13 @@ let thisArgsUser = [
 
 let thisArgsSoldiers = thisArgsUser.filter(thisArgsArmy.canJoin, thisArgsArmy);
 
-console.log(thisArgsSoldiers);
+// console.log(thisArgsSoldiers);
+
+//REDUCE METHOD =======================================>
+
+const reduceRawNumbers = [32, 41, 3, 15, 12, 34];
+const runReduceNumber = reduceRawNumbers.reduce((prev, cur) => {
+  return prev + cur;
+}, 0);
+
+console.log(runReduceNumber);
