@@ -150,3 +150,16 @@ let findUser = [
 
 let userFindId = findUser.find((item) => item.id === 2);
 console.log(userFindId);
+
+//FINDINDEX ARRAY METHOD ==============================>
+let findIndexUser = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pette" },
+  { id: 3, name: "Mary" },
+  { id: 4, name: "John" },
+];
+let findIndexUserResult = findIndexUser.findIndex(
+  (item) => item.name === "John"
+);
+
+console.log(findIndexUserResult);
