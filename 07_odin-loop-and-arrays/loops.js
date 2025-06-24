@@ -103,3 +103,23 @@ forEachItem.forEach((item) => {
 });
 
 console.log(...forEachArr);
+
+//FOREACH CONSTRUCTOR OBJECT (OOP) ==================================>
+class Counter {
+  constructor() {
+    this.sum = 0;
+    this.count = 0;
+  }
+
+  add(array) {
+    array.forEach(function countEntry(entry) {
+      this.sum += entry;
+      ++this.count;
+    }, this);
+  }
+}
+
+const forEachConstructorObj = new Counter();
+forEachConstructorObj.add([2, 5, 9]);
+console.log(forEachConstructorObj.count);
+console.log(forEachConstructorObj.sum);
