@@ -225,3 +225,15 @@ const runReduceNumber = reduceRawNumbers.reduce((prev, cur) => {
 }, 0);
 
 console.log(runReduceNumber);
+
+// REDUCE-FILTER METHOD ================================>
+const reduceFilterNumbers = [12, 14, 1, 23, 16, 17, 9, 3];
+const runReduceFilterNumbers = reduceFilterNumbers.reduce((result, current) => {
+  if (current >= 15 && current <= 25) {
+    result.push(current);
+  }
+
+  return result;
+}, []);
+
+console.log(runReduceFilterNumbers);
