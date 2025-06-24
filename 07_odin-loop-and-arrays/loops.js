@@ -188,3 +188,9 @@ let sortedArray = sortArray.sort((a, b) => {
 });
 
 console.log(sortedArray);
+
+//REVERSE ARRAY METHOD ====================================>
+let reverseArray = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let reversedArray = reverseArray.reverse();
+console.log(reversedArray);
