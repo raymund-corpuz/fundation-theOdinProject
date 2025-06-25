@@ -237,3 +237,21 @@ const runReduceFilterNumbers = reduceFilterNumbers.reduce((result, current) => {
 }, []);
 
 console.log(runReduceFilterNumbers);
+
+// REDUCE OBJECT METHOD ================================>
+const reduceObjPeople = [
+  { name: "Dom Perry", age: 35 },
+  { name: "Andrew Wilksons", age: 47 },
+  { name: "Brian Walker", age: 27 },
+];
+
+const runReduceObj = reduceObjPeople.reduce((res, curr) => {
+  if (curr.age >= 30 && curr.age <= 40) {
+    {
+      res[curr.name] = curr.age;
+    }
+  }
+  return res;
+}, {});
+
+console.log(runReduceObj);
