@@ -270,3 +270,28 @@ mapContacts.set("Hillary", {
 console.log(mapContacts.get("Raymund"));
 
 console.log(mapContacts);
+
+// MAP WITH FOR OF
+const myMap = new Map();
+myMap.set(0, "zero");
+myMap.set(1, "one");
+
+for (const [key, value] of myMap) {
+  console.log(`${key} = ${value}`);
+}
+
+for (const key of myMap.keys()) {
+  console.log(key);
+}
+
+for (const value of myMap.values()) {
+  console.log(value);
+}
+
+for (const [key, value] of myMap.entries()) {
+  console.log(`${key}=${value}`);
+}
+
+myMap.forEach((value, key) => {
+  console.log(`${key}=${value}`);
+});
