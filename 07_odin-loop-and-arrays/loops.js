@@ -310,3 +310,17 @@ const evenTripleSumResult = evenTripleSum
   }, 0);
 
 console.log(evenTripleSumResult);
+
+// REMOVE THE DASH ================================>
+
+function removeDashFunc(word) {
+  const removeDathSplit = word
+    .split("-")
+    .map((word, index) =>
+      index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join("");
+  return removeDathSplit;
+}
+
+console.log(removeDashFunc("background-color"));
