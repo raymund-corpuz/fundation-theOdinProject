@@ -323,4 +323,10 @@ function removeDashFunc(word) {
   return removeDathSplit;
 }
 
-console.log(removeDashFunc("background-color"));
+console.log(removeDashFunc("background-color-to-day"));
+
+//SORT IN DECREASING ORDER =============================>
+let sortDecreasingOrder = [5, 2, 1, -10, 8];
+
+sortDecreasingOrder.sort((a, b) => b - a);
+console.log(sortDecreasingOrder);
