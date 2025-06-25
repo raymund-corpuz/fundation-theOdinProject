@@ -247,11 +247,26 @@ const reduceObjPeople = [
 
 const runReduceObj = reduceObjPeople.reduce((res, curr) => {
   if (curr.age >= 30 && curr.age <= 40) {
-    {
-      res[curr.name] = curr.age;
-    }
+    res[curr.name] = curr.age;
   }
   return res;
 }, {});
 
 console.log(runReduceObj);
+
+//MAP OBJECT ==================================>
+const mapContacts = new Map();
+mapContacts.set("Raymund", {
+  phone: "213-555-1234",
+  address: "Nama, Pozorrubio",
+});
+
+console.log(mapContacts.has("Jessie"));
+console.log(mapContacts.has("Raymund"));
+mapContacts.set("Hillary", {
+  phone: "617-555-4321",
+  address: "Nama, Pozorrubio",
+});
+console.log(mapContacts.get("Raymund"));
+
+console.log(mapContacts);
