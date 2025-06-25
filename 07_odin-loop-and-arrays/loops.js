@@ -295,3 +295,18 @@ for (const [key, value] of myMap.entries()) {
 myMap.forEach((value, key) => {
   console.log(`${key}=${value}`);
 });
+
+const evenTripleSum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const evenTripleSumResult = evenTripleSum
+  .filter((item) => {
+    return item % 2 === 0;
+  })
+  .map((item) => {
+    return item * 3;
+  })
+  .reduce((result, current) => {
+    return result + current;
+  }, 0);
+
+console.log(evenTripleSumResult);
