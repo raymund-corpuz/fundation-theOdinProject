@@ -61,9 +61,9 @@ myCheckBox.addEventListener("click", () => {
 
 const controlBtn = document.querySelectorAll(".button");
 
-controlBtn.forEach((button) => {
-  button.addEventListener("click", () => alert(button.id));
-});
+// controlBtn.forEach((button) => {
+//   button.addEventListener("click", () => alert(button.id));
+// });
 
 const menu = document.querySelector("#menu");
 
@@ -83,3 +83,18 @@ menu.addEventListener("click", (event) => {
       break;
   }
 });
+
+const myListReplaceChild = document.querySelector("#myListReplaceChild");
+const tryItBtn = document.querySelector("#tryItBtn");
+
+function replaceChildFunc() {
+  const elemet = document.createElement("li");
+  const textNode = document.createTextNode("Water");
+
+  elemet.appendChild(textNode);
+
+  const list = document.querySelector("#myListReplaceChild");
+  list.replaceChild(elemet, list.children[0]);
+}
+
+tryItBtn.addEventListener("click", replaceChildFunc);
