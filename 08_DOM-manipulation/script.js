@@ -35,19 +35,26 @@ console.log(body);
 
 const btn = document.querySelector("button");
 
-function randomColor(number) {
+function randomColorFunc(number) {
   return Math.floor(Math.random() * number + 1);
 }
 
-function bgChange(e) {
-  const randomColorVariable = `rgb(${randomColor(255)} ${randomColor(
+function bgChangeFunc(e) {
+  const randomColorVar = `rgb(${randomColorFunc(255)} ${randomColorFunc(
     255
-  )} ${randomColor(255)} )`;
+  )} ${randomColorFunc(255)})`;
 
-  e.target.style.backgroundColor = randomColorVariable;
-
-  console.log(randomColorVariable);
-  console.log(e);
+  e.target.style.backgroundColor = randomColorVar;
+  console.log(randomColorVar);
 }
 
-btn.addEventListener("click", bgChange);
+btn.addEventListener("click", bgChangeFunc);
+
+const myCheckBox = document.querySelector("#myCheckBox");
+myCheckBox.addEventListener("mouseover", () => {
+  myCheckBox.click();
+});
+
+myCheckBox.addEventListener("click", () => {
+  console.log("click event occurred");
+});
