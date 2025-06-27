@@ -64,3 +64,22 @@ const controlBtn = document.querySelectorAll(".button");
 controlBtn.forEach((button) => {
   button.addEventListener("click", () => alert(button.id));
 });
+
+const menu = document.querySelector("#menu");
+
+menu.addEventListener("click", (event) => {
+  let target = event.target;
+  event.preventDefault();
+
+  switch (target.id) {
+    case "home":
+      console.log("Home Menu");
+      break;
+    case "dashboard":
+      console.log("Home Dashboard");
+      break;
+    case "report":
+      console.log("Home Report");
+      break;
+  }
+});
