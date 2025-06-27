@@ -58,3 +58,9 @@ myCheckBox.addEventListener("mouseover", () => {
 myCheckBox.addEventListener("click", () => {
   console.log("click event occurred");
 });
+
+const controlBtn = document.querySelectorAll(".button");
+
+controlBtn.forEach((button) => {
+  button.addEventListener("click", () => alert(button.id));
+});
