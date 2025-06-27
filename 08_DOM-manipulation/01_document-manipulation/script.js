@@ -21,8 +21,4 @@ linkPara.parentNode.removeChild(linkPara);
 const myStyle = document.styleSheets;
 console.log(myStyle);
 
-para.style.color = "white";
-para.style.backgroundColor = "black";
-para.style.padding = "10px";
-para.style.width = "250px";
-para.style.textAlign = "center";
+para.setAttribute("class", "highlight");
