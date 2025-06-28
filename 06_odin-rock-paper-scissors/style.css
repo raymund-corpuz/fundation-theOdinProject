@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #11b2a6;
+  --secondary: #112929;
+  --grey: #2f333e;
+  --light: #eff3eb;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  color: var(--secondary);
+  background-color: var(--primary);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
