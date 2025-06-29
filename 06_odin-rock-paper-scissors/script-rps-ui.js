@@ -24,3 +24,14 @@ function getComputerChoice() {
   console.log(`Computer Selection: ${computerChoice}`);
   return computerChoice;
 }
+
+//Step 3: Create function getUserChoice(accept step1)
+
+// A) store accepted param and return immediately
+// b) check if the param receive is correct
+
+function getUserChoice(user) {
+  const userChoice = user.toLowerCase();
+  console.log(`User Selection: ${userChoice}`);
+  return userChoice;
+}
