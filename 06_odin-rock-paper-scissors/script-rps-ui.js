@@ -52,9 +52,11 @@ function checkRockPaperScissors(computer, user) {
   ) {
     console.log("--Computer Wins--");
     computerScore++;
+    console.log(`Computer Score: ${computerScore} || User Score: ${userScore}`);
   } else {
     console.log("--User Wins--");
     userScore++;
+    console.log(`Computer Score: ${computerScore} || User Score: ${userScore}`);
   }
 }
 
@@ -72,5 +74,11 @@ function playGame(user) {
 
   if (computerScore <= 5 || userScore <= 5) {
     checkRockPaperScissors(computerInput, userInput);
+  }
+
+  if (computerScore === 5) {
+    console.log("Computer Champion");
+  } else if (userScore === 5) {
+    console.log("User Champion");
   }
 }
