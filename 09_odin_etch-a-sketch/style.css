@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  display: flex;
+  width: 400px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.colorPickerDiv {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+button {
+  padding: 4px 16px;
+}
