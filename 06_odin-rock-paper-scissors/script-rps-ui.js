@@ -57,3 +57,20 @@ function checkRockPaperScissors(computer, user) {
     userScore++;
   }
 }
+
+//Step 5 : Create PlayGame function(user)
+// A ) store the param => userChoice
+// B) store computerfunction => computerInput
+// C) store userFunction => userInput
+// D)if userScore and computerScore is less than 5,
+// E)  call getUserChoice( computerInput, userInput)
+
+function playGame(user) {
+  const userChoice = user;
+  const computerInput = getComputerChoice();
+  const userInput = getUserChoice(userChoice);
+
+  if (computerScore <= 5 || userScore <= 5) {
+    checkRockPaperScissors(computerInput, userInput);
+  }
+}
