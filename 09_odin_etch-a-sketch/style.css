@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
@@ -10,7 +9,6 @@
   margin-top: 10px;
   border-radius: 0.5rem;
   display: flex;
-  width: 400px;
   padding: 20px;
   justify-content: center;
   flex-wrap: wrap;
@@ -21,8 +19,13 @@
   width: 400px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   margin-top: 50px;
+  margin-top: 1rem;
+}
+
+.input {
+  display: flex;
 }
 
 button {
