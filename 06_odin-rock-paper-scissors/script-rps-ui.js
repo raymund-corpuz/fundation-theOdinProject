@@ -35,3 +35,25 @@ function getUserChoice(user) {
   console.log(`User Selection: ${userChoice}`);
   return userChoice;
 }
+
+//Step 4 : Create a function checkRockPaperScissors(computer, user )
+// A ) check if the computer === user return draw
+// B ) check if computer win return computer win computer ++
+// C ) check if user win return user  win user++
+// D ) if either user and computer reach score === 5 Champion
+
+function checkRockPaperScissors(computer, user) {
+  if (computer === user) {
+    console.log("--Draw--");
+  } else if (
+    (computer === "paper" && user === "rock") ||
+    (computer === "rock" && user === "scissors") ||
+    (computer === "scissors" && user === "paper")
+  ) {
+    console.log("--Computer Wins--");
+    computerScore++;
+  } else {
+    console.log("--User Wins--");
+    userScore++;
+  }
+}
