@@ -11,3 +11,16 @@ buttonCollection.forEach((button) => {
 
 let userScore = 0;
 let computerScore = 0;
+
+//step 2: Create Function getComputerChoice()
+// A) generate a random num - computerRandonNumber
+// B) Create an array then pass cRN - rockPaperScissorsArray
+// return letterB
+
+function getComputerChoice() {
+  const randomNumber = Math.floor(Math.random() * 3);
+  const rockPaperScissorsArray = ["rock", "paper", "scissors"];
+  const computerChoice = rockPaperScissorsArray[randomNumber];
+  console.log(`Computer Selection: ${computerChoice}`);
+  return computerChoice;
+}
