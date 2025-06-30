@@ -24,6 +24,11 @@ body {
   background-color: #3c3c3c;
 }
 
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
 .colorPickerDiv {
   display: flex;
   width: 400px;
@@ -39,7 +44,7 @@ body {
 }
 
 button {
-  padding: 4px 16px;
+  padding: 8px 24px;
   font-size: 1rem;
   font-weight: 400;
   background-color: #9e4041;
@@ -47,4 +52,9 @@ button {
   outline: none;
   border: none;
   border-radius: 4px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #9e4041;
 }
