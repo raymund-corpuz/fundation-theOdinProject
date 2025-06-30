@@ -1,6 +1,7 @@
 const div = document.querySelector(".container");
 const colorPickerDiv = document.querySelector(".colorPickerDiv");
-const divLength = 32;
+const divLength = 24;
+const body = document.querySelector("body");
 
 div.style.width = `${divLength * 20 + divLength}px`;
 div.style.hegiht = `${divLength * 20 + divLength}px`;
@@ -19,7 +20,7 @@ for (let i = 0; i < divLength; i++) {
     innerDiv.classList.add("boxes");
     innerDiv.style.width = "20px";
     innerDiv.style.height = "20px";
-    innerDiv.style.border = "1px solid black";
+    innerDiv.style.border = "1px solid rgb(92, 92, 92)";
 
     div.appendChild(innerDiv);
   }
