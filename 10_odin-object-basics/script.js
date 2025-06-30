@@ -27,3 +27,26 @@ let userLiteralKey = "likes birds";
 userLiteral[userLiteralKey] = false;
 
 console.log(userLiteral[userLiteralKey]);
+
+//Computed Properties ====================================>
+let fruitsComputedProperties = "apple";
+
+let fruitsComputedPropertiesBag = {
+  [fruitsComputedProperties]: 5,
+};
+
+console.log(fruitsComputedPropertiesBag.apple);
+
+let fruitPromptComputedProperties = "apple";
+let fruitPromptComputedPropertiesBag = {};
+
+fruitPromptComputedPropertiesBag[fruitPromptComputedProperties] = 5;
+
+console.log(fruitPromptComputedPropertiesBag[fruitPromptComputedProperties]);
+
+let fruitPrompt = "apple";
+let bagPrompt = {};
+
+bagPrompt[fruitPrompt] = 5;
+
+console.log(bagPrompt);
