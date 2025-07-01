@@ -125,3 +125,39 @@ let longEar = {
 
 console.log(longEar.walk());
 console.log(longEar.jumps);
+
+// Property existence test "in " operator =============>
+let userPropertyExistence = {};
+let userPropertyExistenceName = "name";
+let userPropertyExistenceAge = "age";
+userPropertyExistence[userPropertyExistenceName] = "John";
+userPropertyExistence[userPropertyExistenceAge] = 30;
+console.log(userPropertyExistence);
+
+console.log(userPropertyExistenceAge in userPropertyExistence);
+console.log(userPropertyExistenceName in userPropertyExistence);
+
+let userPropertyExist = { age: 30 };
+
+let keyPropertyExist = "age";
+console.log(keyPropertyExist in userPropertyExist);
+
+let objectTest = {
+  test: null,
+};
+
+console.log(objectTest.test);
+console.log("test" in objectTest);
+
+// FOR IN LOOP =============================>
+
+let userForInLoop = {
+  name: "John",
+  age: 30,
+  isAdmin: true,
+};
+
+for (let key in userForInLoop) {
+  console.log(key);
+  console.log(userForInLoop[key]);
+}
