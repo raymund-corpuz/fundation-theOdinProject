@@ -178,3 +178,14 @@ for (let key in codeOrder) {
 console.log(String(Math.trunc(Number("49")))); // "49", same, integer property
 console.log(String(Math.trunc(Number("+49")))); // "49", not same "+49" ⇒ not integer property
 console.log(String(Math.trunc(Number("1.2"))));
+
+let codeInteger = {
+  "+49": "Germany",
+  "+41": "Switzerland",
+  "+44": "Great Britain",
+  "+1": "USA",
+};
+
+for (let code in codeInteger) {
+  console.log(+code);
+}
