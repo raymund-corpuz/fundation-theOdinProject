@@ -161,3 +161,20 @@ for (let key in userForInLoop) {
   console.log(key);
   console.log(userForInLoop[key]);
 }
+
+//Ordered LIKE an OBJECTS
+
+let codeOrder = {
+  49: "Germany",
+  41: "Switzerland",
+  44: "Great Britain",
+  1: "USA",
+};
+
+for (let key in codeOrder) {
+  console.log(key);
+}
+
+console.log(String(Math.trunc(Number("49")))); // "49", same, integer property
+console.log(String(Math.trunc(Number("+49")))); // "49", not same "+49" ⇒ not integer property
+console.log(String(Math.trunc(Number("1.2"))));
