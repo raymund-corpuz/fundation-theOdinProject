@@ -20,3 +20,15 @@ console.log(personObject.name[0]);
 console.log(personObject.age);
 console.log(personObject.introduceSelf());
 console.log(personObject.workExperience());
+
+const personObjectObject = {
+  name: {
+    first: "Bob",
+    last: "Smith",
+  },
+};
+
+console.log(personObjectObject.name.first);
+console.log(personObjectObject.name.last);
+console.log(personObjectObject.name["first"]);
+console.log(personObjectObject["name"]["last"]);
