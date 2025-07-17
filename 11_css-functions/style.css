@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.box {
+  background-color: palevioletred;
+  width: clamp(350px, 50%, 500px);
+  height: 400px;
+  margin: 50px auto;
+  padding: 1rem;
+}
