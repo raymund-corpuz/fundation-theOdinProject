@@ -117,3 +117,23 @@
   grid-column: 1/2;
   grid-row: 2/4;
 }
+
+.grid-container {
+  resize: both;
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: skyblue;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+}
+
+.grid-item {
+  background-color: #444;
+  text-align: center;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 12px;
+}
