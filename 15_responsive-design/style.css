@@ -83,6 +83,9 @@ img {
 }
 
 @media (max-width: 700px) {
+  .container {
+    max-width: 420px;
+  }
   .small {
     display: flex;
     background-color: #333;
@@ -113,7 +116,7 @@ img {
   }
 }
 
-@media (min-width: 921px) {
+@media (min-width: 921px) and (max-width: 1400px) {
   .large {
     display: flex;
     background-color: #333;
