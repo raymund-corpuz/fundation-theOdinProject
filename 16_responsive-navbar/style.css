@@ -25,6 +25,7 @@ h1 {
   font-size: 1.25rem;
   margin-bottom: 1em;
   color: #333;
+  color: lightseagreen;
 }
 
 nav ul {
@@ -55,4 +56,32 @@ nav a:focus {
 
 .current-page {
   border-bottom: 1px solid #333;
+}
+
+@media (max-width: 675px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    max-width: 100%;
+    justify-content: space-evenly;
+    background-color: inherit;
+    padding: 2em;
+    text-align: start;
+    background-color: #f8f8f8;
+  }
+
+  .site-title {
+    margin-right: 2em;
+  }
 }
